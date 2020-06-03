@@ -15,11 +15,11 @@ int main()
         cin >> A; cin.ignore();
         
         int n = 1;
-        double res_exp = n * log(A);
+        double res_exp = n * log((double)A);
         double res_fac = (0.5 * log(2 * M_PIl)) + ((n + 0.5) * log(n)) - n;
         while ( res_exp >= res_fac){
             n++;
-            res_exp = n * log(A);
+            res_exp = n * log((double)A);
             res_fac = (0.5 * log(2 * M_PIl)) + ((n + 0.5) * log(n)) - n;
         }
 
